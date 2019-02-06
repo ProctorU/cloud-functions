@@ -1,0 +1,13 @@
+{
+  "name": "handle-needs-label",
+  "version": "0.1.0",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "got": "^8.2.0"
+  },
+  "scripts": {
+    "predeploy": "gcloud config configurations activate team",
+    "deploy": "gcloud alpha functions deploy handleNeedsLabel"
+  }
+}

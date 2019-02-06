@@ -1,0 +1,6 @@
+indexes:
+
+- kind: GithubReview
+  properties:
+  - name: user
+  - name: submittedAt

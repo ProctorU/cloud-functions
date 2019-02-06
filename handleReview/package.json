@@ -1,0 +1,14 @@
+{
+  "name": "handle-review",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/datastore": "^2.0.0",
+    "got": "^8.2.0"
+  },
+  "scripts": {
+    "predeploy": "gcloud config configurations activate team",
+    "deploy": "gcloud alpha functions deploy handleReview"
+  }
+}

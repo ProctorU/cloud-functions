@@ -1,0 +1,13 @@
+{
+  "name": "storm-handle-assigned",
+  "version": "0.1.0",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "slack": "^11.0.0"
+  },
+  "scripts": {
+    "predeploy": "gcloud config configurations activate team",
+    "deploy": "gcloud alpha functions deploy handleAssigned"
+  }
+}

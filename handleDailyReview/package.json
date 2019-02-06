@@ -1,0 +1,14 @@
+{
+  "name": "handle-daily-review",
+  "version": "0.1.0",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "@google-cloud/datastore": "^1.4.0",
+    "slack": "^11.0.0"
+  },
+  "scripts": {
+    "predeploy": "gcloud config configurations activate team",
+    "deploy": "gcloud alpha functions deploy handleDailyReview"
+  }
+}

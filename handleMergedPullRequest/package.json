@@ -1,0 +1,17 @@
+{
+  "name": "handle-merged-pull-request",
+  "version": "0.1.0",
+  "description": "Tracking for merged GitHub Pull Requests",
+  "main": "index.js",
+  "author": "king601",
+  "private": true,
+  "dependencies": {
+    "@google-cloud/datastore": "^2.0.0",
+    "got": "^8.3.0",
+    "slack": "^11.0.0"
+  },
+  "scripts": {
+    "predeploy": "gcloud config configurations activate team",
+    "deploy": "gcloud alpha functions deploy handleMergedPullRequest"
+  }
+}
