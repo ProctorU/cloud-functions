@@ -6,7 +6,7 @@ const slack = require('slack');
 const settings = require('./settings.json');
 
 /**
- * Assigns a reviewer to a new pull request from a list of eligble reviewers.
+ * Assigns a reviewer to a new pull request from a list of eligible reviewers.
  * Reviewers with the least assigned reviews on open pull requests will be
  * prioritized for assignment.
  *
